@@ -1,0 +1,34 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.centered-homeuser {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.map-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+#map { 
+  height: 500px; 
+  width: 500px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.centered-homeuser {
+  padding-top: 40px;
+  text-align: center;
+}
+

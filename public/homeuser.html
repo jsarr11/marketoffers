@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Homepage</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/d284332908.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Leaflet CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Leaflet Javascript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="jumbotron centered-homeuser">
+        <div class="container">
+          <i class="fa-solid fa-cart-shopping fa-6x"></i>
+          <h1 class="display-3">MarketOffers</h1>
+        </div>
+    </div>
+    <div class="map-container">
+        <div id="map" class="homeuser-map">
+            <script>
+                var map = L.map('map').setView([0, 0], 15);
+                
+                var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                });
+                osm.addTo(map);
+        
+                var redMarker = L.icon({
+                    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                });
+        
+                var blueMarker = L.icon({
+                    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                });
+
+                // Get user's current location
+                function getUserLocation() {
+                    if ("geolocation" in navigator) {
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                            var userMarker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+                            userMarker.bindPopup("Your current location").openPopup();
+                            userMarker.setIcon(redMarker);
+                            
+                            // Set map view to user's location
+                            map.setView([position.coords.latitude, position.coords.longitude], 15);
+                        });
+                    } else {
+                        console.log("Geolocation is not available in this browser.");
+                    }
+                }
+                getUserLocation();
+        
+                async function logJSONData() {
+                    try {
+                        const response = await fetch("/api/data"); // Corrected API endpoint
+                        if (!response.ok) {
+                            throw new Error(`Network response was not ok. Status: ${response.status}`);
+                        }
+                        
+                        const jsonData = await response.json();
+                        console.log(jsonData); // Log the received JSON data for debugging
+                        
+                        jsonData.forEach(a => {
+                            var marker = L.marker([a.lat, a.lon]).addTo(map);
+                            marker.setIcon(redMarker);
+                        });
+                    } catch (error) {
+                        console.error("Error fetching or processing data:", error);
+                    }
+                }
+                map.on('load', function() {
+                    logJSONData();
+                });
+            </script>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
