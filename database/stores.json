@@ -1,0 +1,218 @@
+[
+    {
+        "id": 1001,
+        "name": "Σκλαβενιτης",
+        "address": "Περιβολα",
+        "number": null,
+        "long": 38.210342,
+        "lat": 21.762762,
+        "offer": false
+    },
+    {
+        "id": 1002,
+        "name": "Αραπης",
+        "address": "Καλαβρυτων, Μεγ. Αλεξανδρου",
+        "number": null,
+        "long": 38.220198,
+        "lat": 21.745640,
+        "offer": false
+    },
+    {
+        "id": 1003,
+        "name": "My Market",
+        "address": "Ακρωτηριου",
+        "number": 189,
+        "long": 38.217983,
+        "lat": 21.741232,
+        "offer": false
+    },
+    {
+        "id": 1004,
+        "name": "Σκλαβενιτης",
+        "address": "Ευβοιας",
+        "number": 169,
+        "long": 38.219622,
+        "lat": 21.737148,
+        "offer": false 
+    },
+    {
+        "id": 1005,
+        "name": "Παρασκευοπουλος",
+        "address": "Ακρωτηριου",
+        "number": 82,
+        "long": 38.224239,
+        "lat": 21.742497,
+        "offer": false
+    },
+    {
+        "id": 1006,
+        "name": "Market IN",
+        "address": "Σουδας",
+        "number": 1,
+        "long": 38.227599,
+        "lat": 21.742210,
+        "offer": false
+    },
+    {
+        "id": 1007,
+        "name": "Lidl",
+        "address": "Γοργοποταμου",
+        "number": 8,
+        "long": 38.231122,
+        "lat": 21.739956,
+        "offer": false
+    },
+    {
+        "id": 1008,
+        "name": "ΑΒ Βασιλοπουλος",
+        "address": "Ακτη Δυμαιων. Ελ Βενιζελου",
+        "number": null,
+        "long": 38.232425,
+        "lat": 21.725021,
+        "offer": false
+    },
+    {
+        "id": 1009,
+        "name": "Lidl",
+        "address": "Νοταρα",
+        "number": 9,
+        "long": 38.263223,
+        "lat": 21.743780,
+        "offer": false
+    },
+    {
+        "id": 1010,
+        "name": "Σκλαβενιτης",
+        "address": "Νοταρα",
+        "number": 141,
+        "long": 38.269167,
+        "lat": 21.749782,
+        "offer": false
+    },
+    {
+        "id": 1011,
+        "name": "Ανδρικοπουλος",
+        "address": "Αξιου",
+        "number": 1,
+        "long": 38.269209,
+        "lat": 21.747905,
+        "offer": false
+    },
+    {
+        "id": 1012,
+        "name": "Σκλαβενιτης",
+        "address": "Ιωνιας",
+        "number": 90,
+        "long": 38.234807,
+        "lat": 21.740190,
+        "offer": false
+    },
+    {
+        "id": 1013,
+        "name": "Γαλαξιας",
+        "address": "Παναχαικου",
+        "number": 76,
+        "long": 38.236322,
+        "lat": 21.733782        ,
+        "offer": false
+    },
+    {
+        "id": 1014,
+        "name": "Ανδρικοπουλος",
+        "address": "Μαιζωνος",
+        "number": 203,
+        "long": 38.242737,
+        "lat": 21.730099,
+        "offer": false
+    },
+    {
+        "id": 1015,
+        "name": "Σκλαβενιτης",
+        "address": "Κανακαρη",
+        "number": 106,
+        "long": 38.246437,
+        "lat": 21.736988,
+        "offer": false
+    },
+    {
+        "id": 1016,
+        "name": "Ιωαννου",
+        "address": "Καλαβρυτων",
+        "number": 39,
+        "long": 38.228620,
+        "lat": 21.749011,
+        "offer": false
+    },
+    {
+        "id": 1017,
+        "name": "ΑΒ Βασιλοπουλος",
+        "address": "Πατρων Κλαους",
+        "number": 2,
+        "long": 38.231517,
+        "lat": 21.747737,
+        "offer": false
+    },
+    {
+        "id": 1018,
+        "name": "My Market",
+        "address": "Καλαβρυτων",
+        "number": 52,
+        "long": 38.232651,
+        "lat": 21.747379        ,
+        "offer": false
+    },
+    {
+        "id": 1019,
+        "name": "Σκλαβενιτης",
+        "address": "Αροης",
+        "number": 2,
+        "long": 38.241519,
+        "lat": 21.748414,
+        "offer": false
+    },
+    {
+        "id": 1020,
+        "name": "ΑΒ Βασιλοπουλος",
+        "address": "Αρατου 15",
+        "number": 15,
+        "long": 38.249745,
+        "lat": 21.737757,
+        "offer": false
+    },
+    {
+        "id": 1021,
+        "name": "Ανδρικοπουλος",
+        "address": "Κορινθου",
+        "number": 190,
+        "long": 38.248404,
+        "lat": 21.738391,
+        "offer": false
+    },
+    {
+        "id": 1022,
+        "name": "Αραπης",
+        "address": "Μαιζωνος",
+        "number": 22,
+        "long": 38.250573,
+        "lat": 21.739905,
+        "offer": false
+    },
+    {
+        "id": 1023,
+        "name": "Market IN",
+        "address": "Αιγυπτου",
+        "number": 4,
+        "long": 38.264373,
+        "lat": 21.739481,
+        "offer": false
+    },
+    {
+        "id": 1024,
+        "name": "ΑΒ Βασιλοπουλος",
+        "address": "ΝΕΟ Πατρων-Αθηνων, Αμερικης",
+        "number": null,
+        "long": 38.261211,
+        "lat": 21.749485,
+        "offer": false
+    }
+]
